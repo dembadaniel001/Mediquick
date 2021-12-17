@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".diseases.Prescription"
+    android:background="@drawable/image02">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B0000000"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/aclonica"
+                android:padding="5dp"
+                android:text="Disease name and symptoms "
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.054" />
+
+            <EditText
+                android:id="@+id/disease_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/input_bg"
+                android:ems="10"
+                android:fontFamily="@font/aclonica"
+                android:hint="Disease Name"
+                android:inputType="textPersonName"
+                android:padding="3dp"
+                android:textColor="#fff"
+                android:textColorHint="@color/white"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                app:layout_constraintVertical_bias="0.111" />
+
+            <EditText
+                android:id="@+id/prescription01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input_bg"
+                android:ems="10"
+                android:fontFamily="@font/aclonica"
+                android:gravity="start|top"
+                android:hint="Prescription1"
+                android:inputType="textMultiLine"
+                android:padding="3dp"
+                android:textColor="#fff"
+                android:textColorHint="@color/white"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/disease_name"
+                app:layout_constraintVertical_bias="0.158" />
+
+            <EditText
+                android:id="@+id/prescription02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input_bg"
+                android:ems="10"
+                android:fontFamily="@font/aclonica"
+                android:gravity="start|top"
+                android:hint="Other prescription1"
+                android:inputType="textMultiLine"
+                android:padding="3dp"
+                android:textColor="#fff"
+                android:textColorHint="@color/white"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/prescription01"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/prescription01"
+                app:layout_constraintTop_toBottomOf="@+id/prescription01"
+                app:layout_constraintVertical_bias="0.077" />
+
+            <EditText
+                android:id="@+id/prescription03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input_bg"
+                android:ems="10"
+                android:fontFamily="@font/aclonica"
+                android:gravity="start|top"
+                android:hint="Other prescription2"
+                android:inputType="textMultiLine"
+                android:padding="3dp"
+                android:textColor="#fff"
+                android:textColorHint="@color/white"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/prescription02"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/prescription02"
+                app:layout_constraintTop_toBottomOf="@+id/prescription02"
+                app:layout_constraintVertical_bias="0.065" />
+
+            <Button
+                android:id="@+id/savePrescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_bg"
+                android:fontFamily="@font/aldrich"
+                android:shadowColor="#307E04"
+                android:text="Save"
+                android:textColor="#198F1D"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/prescription03"
+                app:layout_constraintStart_toStartOf="@+id/prescription03"
+                app:layout_constraintTop_toBottomOf="@+id/prescription03"
+                app:layout_constraintVertical_bias="0.106" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="32dp"
+                android:drawableLeft="@drawable/info_2"
+                android:drawablePadding="2dp"
+                android:padding="2dp"
+                android:text="Please write a full prescription in text-box separated by comas"
+                android:textColor="#FF0000"
+                app:layout_constraintBottom_toTopOf="@+id/prescription01"
+                app:layout_constraintEnd_toEndOf="@+id/prescription01"
+                app:layout_constraintHorizontal_bias="0.62"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/disease_name"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

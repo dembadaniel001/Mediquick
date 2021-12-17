@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "176135702976",
+    "project_id": "mediquick-ae9ba",
+    "storage_bucket": "mediquick-ae9ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176135702976:android:a2e0fe76ac54ef75a92025",
+        "android_client_info": {
+          "package_name": "com.demba.mediquick"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "176135702976-1i5h05gekntl0huojp31hpkua8pf2ppt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7KKqcXzeWEJdanFwhkKfODCVbdnfvmsw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "176135702976-1i5h05gekntl0huojp31hpkua8pf2ppt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

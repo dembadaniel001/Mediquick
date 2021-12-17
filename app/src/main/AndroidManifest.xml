@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.demba.mediquick">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mediquick">
+        <activity android:name=".general.FindPrescription"></activity>
+        <activity android:name=".diseases.Prescription" />
+        <activity android:name=".diseases.CreateUpdateSymptoms" />
+        <activity android:name=".general.Share" />
+        <activity android:name=".general.Rate" />
+        <activity android:name=".general.Terms" />
+        <activity android:name=".manage_users.ManageUsers" />
+        <activity android:name=".diseases.ManageDiseasesActivity" />
+        <activity android:name=".general.ProfileActivity" />
+        <activity android:name=".general.HomeActivity" />
+        <activity android:name=".auth.RegisterActivity" />
+        <activity android:name=".auth.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
